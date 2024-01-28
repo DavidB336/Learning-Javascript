@@ -1,0 +1,33 @@
+let = degats;
+
+function choixArmes (){
+    let arme = prompt ("Choisissez entre, épée, couteau ou dague.")
+    return arme;
+}
+
+function degatsArmes (arme){
+
+if (arme == "épée"){
+    degats = 3;
+}
+else if (arme == "couteau"){
+    degats = 1;
+}
+else if (arme == "dague"){
+    degats = 2;
+}
+else {throw new Error ("Vous ne pouvez pas faire ça.")}
+}
+
+function resultat(){
+    if (arme == "épée" || "couteau" || "dague"){
+        alert ("Vous avez choisi " + arme + " (" + degats + ").");
+    }
+    else {
+        alert (error);
+    }
+}
+
+choixArmes ();
+degatsArmes (arme);
+resultat ();
